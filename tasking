@@ -1,0 +1,61 @@
+#0 input
+["ITEM0001 x 1", "ITEM0013 x 2", "ITEM0022 x 1"]
+
+[{
+    id: 'ITEM0001',
+    name: '黄焖鸡',
+    price: 18.00
+  }, {
+    id: 'ITEM0013',
+    name: '肉夹馍',
+    price: 6.00
+  }, {
+    id: 'ITEM0022',
+    name: '凉皮',
+    price: 8.00
+  }, {
+    id: 'ITEM0030',
+    name: '冰锋',
+    price: 2.00
+  }
+];
+
+# 1 generate items in cart
+[
+   'ITEM0001': {
+    id: String,
+    name: String,
+    price: Number,
+    count: Number
+  },
+  'ITEM0013': {
+    id: String,
+    name: String,
+    price: Number,
+    count: Number
+  },
+  ...,
+  ...
+];
+
+# 2. add promotion
+# final output
+[
+   'ITEM0001': {
+    id: String,
+    name: String,
+    price: Number,
+    count: Number
+  },
+  'ITEM0013': {
+    id: String,
+    name: String,
+    price: Number,
+    count: Number
+  },
+
+  total: Number,
+  bestSaving: Number
+];
+
+
